@@ -1,0 +1,62 @@
+<!--
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Conversion de mots en phonèmes IPA</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Convertir des mots en phonèmes IPA</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Mot</th>
+                <th>Phonèmes IPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(10) %}
+            <tr>
+                <td><input type="text" id="wordInput{{ i }}" placeholder="Entrez un mot"></td>
+                <td><span id="result{{ i }}"></span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <button onclick="getPhonemes()">Convertir les mots</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Conversion de mots en phonèmes IPA</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Convertir des mots en phonèmes IPA</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Mot</th>
+                <th>Phonèmes IPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(10) %}
+            <tr>
+                <td><input type="text" id="wordInput{{ i }}" placeholder="Entrez un mot"></td>
+                <td><span id="result{{ i }}"></span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <button onclick="getPhonemes()">Convertir les mots</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
